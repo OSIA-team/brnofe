@@ -141,3 +141,13 @@ Array
 )
 
 -------------------------
+Site: 127.0.0.1 - March 21, 2018, 2:59 pm
+Array
+(
+    [0] => 
+)
+
+-------------------------
+Site: 127.0.0.1 - March 21, 2018, 4:14 pm
+<p>An error has occurred:</p><p>Error at 2018-03-21 16:14:59: Query: <br />get_row You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Item' at line 1</p><p>Severity: Fatal</p>
+-------------------------

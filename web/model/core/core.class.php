@@ -20,7 +20,9 @@ class core{
         $log    .=  ($backtrace != NULL)? "Called from:".PHP_EOL.print_r($backtrace, true).PHP_EOL:"";
         $log    .=  (is_array($message))?print_r($message, true).PHP_EOL:$message.PHP_EOL;
         $log    .=  "-------------------------".PHP_EOL;
-        file_put_contents('tmp/log_Debug.txt', $log, FILE_APPEND);
+        if(!file_put_contents('tmp/log_Debug.txt', $log, FILE_APPEND)){
+            echo "<pre>Cannot save DebugFile, check permissions or if folder exists!</pre>";
+        }
     }
 
     static function setMode(){
@@ -62,5 +64,11 @@ class core{
         $database = new database();
         $result = $database->get_row("SELECT value FROM siteinfo WHERE name = '{$get}'");
         return ($result)?$result:FALSE;
+    }
+
+    static function getLinkToAssets(){
+
+
+
     }
 }

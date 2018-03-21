@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="local.osia">
+  <component name="PublishConfigData" serverName="OSIAProject">
     <serverData>
-      <paths name="Coqui-all">
+      <paths name="OSIAProject">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="cronstats.sw">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="local.osia">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="OSIA/brnofe" />
+            <mapping local="$PROJECT_DIR$" web="brnofe" />
           </mappings>
         </serverdata>
       </paths>

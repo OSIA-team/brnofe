@@ -50,7 +50,7 @@ class basepage
             $$key = $value;
         }
         // TODO: PUBLIC OR ADMIN?
-        require_once "templates/public/".$this->template.".phtml";
+        require_once "templates/public/".$this->template;
         $this->renderFooter();
         ob_flush();
         ob_end_clean();
@@ -63,6 +63,7 @@ class basepage
         // TODO: DOMYSLET
         // TODO: ADMIN/PUBLIC?
         $title = \core\core::getSiteinfo("title");
+        $linkToAssets =
         $title = $title['value'];
         require_once "templates/public/head.phtml";
     }
@@ -72,6 +73,9 @@ class basepage
      */
     private function renderHeader(){
         // TODO: Dynamik
+        $tomenu     = new database();
+        $menuList   = $tomenu->get_results('SELECT name, id FROM page WHERE parrent_menu IS NULL');
+        $submenu    = $tomenu->get_results('SELECT name, id, parrent_menu FROM page WHERE parrent_menu IS NOT NULL ');
         require_once "templates/public/header.phtml";
     }
 

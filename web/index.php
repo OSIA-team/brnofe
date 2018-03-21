@@ -30,7 +30,6 @@ load_classphp('./model');
 
 \core\core::$configFile = require_once 'config.php';
 $parsedURL = \core\core::requestURL();
-\core\core::debugLog($parsedURL);
 session_start();
 
 if (isset($_POST)){

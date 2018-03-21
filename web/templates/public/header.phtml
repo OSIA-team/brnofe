@@ -14,6 +14,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
+                <!--
                 <li>
                     <a href="about.html">About</a>
                 </li>
@@ -23,6 +24,16 @@
                 <li>
                     <a href="contact.html">Contact</a>
                 </li>
+                -->
+                <?php
+                    foreach ($menuList as $menuNumber => $menu):
+                ?>
+                        <li>
+                            <a href="page/read/<?= $menu['name'] ?>"><?= $menu['name'] ?></a>
+                        </li>
+                <?php
+                    endforeach;
+                ?>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
                     <ul class="dropdown-menu">

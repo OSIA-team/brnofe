@@ -10,15 +10,12 @@ namespace core;
 
 use core\core;
 
+
+
 class form
 {
     private $data = array();
     private $forms = array(
-        'addKategorie' => 'addKategorie',
-        'edit_jidlo' => 'editJidlo',
-        'edit_kategorie' => 'editKategorie',
-        'pridat_jidlo' => 'pridatJidlo',
-        'upload_img' => 'uploadImgJidlo',
-        'obj-status' => 'objStatus'
+        'submiteName' => 'methodName'
     );
 }
