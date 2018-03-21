@@ -30,6 +30,7 @@ load_classphp('./model');
 
 \core\core::$configFile = require_once 'config.php';
 $parsedURL = \core\core::requestURL();
+\core\core::debugLog($parsedURL);
 session_start();
 
 if (isset($_POST)){
@@ -40,10 +41,10 @@ if (class_exists('\page\\'.$parsedURL[0]."page")){
     unset($parsedURL[0]);
     new \page\basepage();
     $page = new $class($parsedURL);
-} elseif($parsedURL[0] == ''){
+} elseif($parsedURL[0] === ''){
     new \page\basepage();
     new \page\main();
 } else {
-    echo "error";
+    echo "Error 404";
    // die();
 }

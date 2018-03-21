@@ -1,0 +1,143 @@
+Site: 127.0.0.1 - March 20, 2018, 11:17 pm
+Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [name] => Nadpis
+            [value] => Brnofé
+        )
+
+)
+
+-------------------------
+Site: 127.0.0.1 - March 20, 2018, 11:18 pm
+Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [name] => Nadpis
+            [value] => Brnofé
+        )
+
+)
+
+-------------------------
+Site: 127.0.0.1 - March 20, 2018, 11:19 pm
+<p>An error has occurred:</p><p>Error at 2018-03-20 23:19:53: Query: <br />get_results You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '$get' at line 1</p><p>Severity: Fatal</p>
+-------------------------
+Site: 127.0.0.1 - March 20, 2018, 11:19 pm
+
+-------------------------
+Site: 127.0.0.1 - March 20, 2018, 11:20 pm
+<p>An error has occurred:</p><p>Error at 2018-03-20 23:20:25: Query: <br />get_results Unknown column 'nadpis' in 'where clause'</p><p>Severity: Fatal</p>
+-------------------------
+Site: 127.0.0.1 - March 20, 2018, 11:20 pm
+
+-------------------------
+Site: 127.0.0.1 - March 20, 2018, 11:21 pm
+<p>An error has occurred:</p><p>Error at 2018-03-20 23:21:00: Query: <br />get_results Unknown column 'Nadpis' in 'where clause'</p><p>Severity: Fatal</p>
+-------------------------
+Site: 127.0.0.1 - March 20, 2018, 11:21 pm
+
+-------------------------
+Site: 127.0.0.1 - March 20, 2018, 11:21 pm
+<p>An error has occurred:</p><p>Error at 2018-03-20 23:21:47: Query: <br />get_results You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Nadpis' at line 1</p><p>Severity: Fatal</p>
+-------------------------
+Site: 127.0.0.1 - March 20, 2018, 11:21 pm
+
+-------------------------
+Site: 127.0.0.1 - March 20, 2018, 11:22 pm
+Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [name] => Nadpis
+            [value] => Brnofé
+        )
+
+)
+
+-------------------------
+Site: 127.0.0.1 - March 20, 2018, 11:23 pm
+Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [name] => Nadpis
+            [value] => Brnofé
+        )
+
+)
+
+-------------------------
+Site: 127.0.0.1 - March 20, 2018, 11:25 pm
+Nadpis
+-------------------------
+Site: 127.0.0.1 - March 20, 2018, 11:26 pm
+
+-------------------------
+Site: 127.0.0.1 - March 20, 2018, 11:26 pm
+
+-------------------------
+Site: 127.0.0.1 - March 20, 2018, 11:27 pm
+Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [name] => title
+            [value] => Brnofé
+        )
+
+)
+
+-------------------------
+Site: 127.0.0.1 - March 20, 2018, 11:28 pm
+Array
+(
+    [value] => Brnofé
+)
+
+-------------------------
+Site: 127.0.0.1 - March 20, 2018, 11:52 pm
+Array
+(
+    [0] => 
+    [1] => brnofe
+    [2] => web
+    [3] => kavarna
+)
+
+-------------------------
+Site: 127.0.0.1 - March 20, 2018, 11:53 pm
+Array
+(
+    [0] => kavarna
+)
+
+-------------------------
+Site: 127.0.0.1 - March 20, 2018, 11:53 pm
+Array
+(
+    [0] => 
+)
+
+-------------------------
+Site: 127.0.0.1 - March 20, 2018, 11:53 pm
+Array
+(
+    [0] => kavarna
+)
+
+-------------------------
+Site: 127.0.0.1 - March 20, 2018, 11:53 pm
+Array
+(
+    [0] => 
+)
+
+-------------------------

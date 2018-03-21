@@ -21,7 +21,7 @@ return [
             'host' => 'localhost',
             'user' => 'root',
             'password' => '',
-            'database' => 'Bel3s'
+            'database' => 'brnofe'
         ],
 
         'test' => [
@@ -39,7 +39,7 @@ return [
         ]
     ],
     'dir' => [
-        'dev' => '/tenesin/web/'
+        'dev' => '/brnofe/web/'
         ],
         [
         'test' => 'web/'

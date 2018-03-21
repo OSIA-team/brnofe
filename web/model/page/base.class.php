@@ -44,12 +44,40 @@ class basepage
 
     protected function render(){
         ob_start();
+        $this->renderHead();
+        $this->renderHeader();
         foreach ($this->data as $key => $value){
             $$key = $value;
         }
-        require_once "templates/".$this->template.".phtml";
+        // TODO: PUBLIC OR ADMIN?
+        require_once "templates/public/".$this->template.".phtml";
+        $this->renderFooter();
         ob_flush();
         ob_end_clean();
+    }
+
+    /**
+     *  render <head>
+     */
+    private function renderHead(){
+        // TODO: DOMYSLET
+        // TODO: ADMIN/PUBLIC?
+        $title = \core\core::getSiteinfo("title");
+        $title = $title['value'];
+        require_once "templates/public/head.phtml";
+    }
+
+    /**
+     * render header of the page
+     */
+    private function renderHeader(){
+        // TODO: Dynamik
+        require_once "templates/public/header.phtml";
+    }
+
+    private function renderFooter(){
+
+        require_once "templates/public/footer.phtml";
     }
 
 }

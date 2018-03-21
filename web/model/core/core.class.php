@@ -52,4 +52,15 @@ class core{
         $parsedURL  = explode("/", $parsedURL['path']);
         return $parsedURL;
     }
+
+    /**
+     * @param null $get
+     * @return array|bool
+     * TODO: poresite $get
+     */
+    static function getSiteinfo($get = NULL){
+        $database = new database();
+        $result = $database->get_row("SELECT value FROM siteinfo WHERE name = '{$get}'");
+        return ($result)?$result:FALSE;
+    }
 }

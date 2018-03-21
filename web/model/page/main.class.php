@@ -7,16 +7,21 @@
  */
 
 namespace page;
+
 use page\basepage;
 
-class main extends basepage{
+class main extends basepage
+{
 
-    function __construct(){
+    function __construct()
+    {
         parent::getRenderer();
     }
 
-    function renderDefault(){
-        echo 'main page default';
+    function renderDefault()
+    {
+        $this->data['nadpis'] = "Brnofé";
+        $this->render();
     }
 
 }
