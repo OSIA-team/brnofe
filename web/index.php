@@ -6,6 +6,9 @@
  * Time: 19:39
  */
 
+define( 'DISPLAY_DEBUG', true );
+define( 'SEND_ERRORS_TO', 'k.kosut@gmail.com' );
+
 setlocale(LC_ALL, "cs_CZ.utf-8");
 
 function load_classphp($directory) {

@@ -1,4 +1,4 @@
 RewriteEngine On
 RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule !\.(css|js|icon|zip|rar|png|jpg|gif|pdf)$ /brnofe/web/index.php [L]
+RewriteRule !\.(css|js|icon|zip|rar|png|jpg|gif|pdf|map|xml)$ /brnofe/web/index.php [L]

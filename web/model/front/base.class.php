@@ -14,7 +14,7 @@ use database\database;
 class basepage
 {
     public $data = array();
-    public $template = "default";
+    public $template = "default.phtml";
 
 
     public function getRenderer($method = NULL)
@@ -74,7 +74,8 @@ class basepage
     private function renderHeader(){
         // TODO: Dynamik
         $tomenu     = new database();
-        $menuList   = $tomenu->get_results('SELECT name, id FROM page WHERE parrent_menu IS NULL');
+        // TODO: IF NO PAGES
+        $menuList   = $tomenu->get_results('SELECT url, name, id FROM page WHERE parrent_menu IS NULL');
         $submenu    = $tomenu->get_results('SELECT name, id, parrent_menu FROM page WHERE parrent_menu IS NOT NULL ');
         require_once "templates/public/header.phtml";
     }

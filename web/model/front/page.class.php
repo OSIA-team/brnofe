@@ -22,9 +22,10 @@ class pagepage extends basepage {
     }
 
     public function renderRead($options){
+        $url = $options[0];
         $name = $options[0];
         $content = new database();
-        $content = $content->get_row("SELECT content FROM page WHERE name = '{$name}'")['content'];
+        $content = $content->get_row("SELECT content FROM page WHERE url = '{$url}'")['content'];
 
         $this->data['nadpis'] = $name;
         $this->template = 'page/read.phtml';

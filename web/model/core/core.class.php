@@ -66,9 +66,8 @@ class core{
         return ($result)?$result:FALSE;
     }
 
-    static function getLinkToAssets(){
-
-
+    static function urlToAssets(){
+    return $parsedURL = \core\core::requestURL();
 
     }
 }
