@@ -38,6 +38,23 @@ session_start();
 if (isset($_POST)){
     $form = new \core\form($_POST);
 }
+if ($parsedURL[0] == 'admin'){
+    $parsedURL[1] = (isset($parsedURL[1]))?$parsedURL[1]:'';
+    if (class_exists('\admin\\'.$parsedURL[1]."page")){
+        $class = '\admin\\'.$parsedURL[0]."page";
+        unset($parsedURL[0]);
+        new \admin\basepage();
+        $page = new $class($parsedURL);
+        die();
+    } elseif($parsedURL[1] === ''){
+        new \admin\basepage();
+        new \admin\main();
+        die();
+    } else {
+        echo "Error 404";
+        die();
+    }
+}
 if (class_exists('\page\\'.$parsedURL[0]."page")){
     $class = '\page\\'.$parsedURL[0]."page";
     unset($parsedURL[0]);
@@ -48,5 +65,5 @@ if (class_exists('\page\\'.$parsedURL[0]."page")){
     new \page\main();
 } else {
     echo "Error 404";
-   // die();
+   die();
 }
