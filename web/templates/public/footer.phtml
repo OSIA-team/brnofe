@@ -2,7 +2,7 @@
 <footer>
     <div class="row">
         <div class="col-lg-12">
-            <p>With Love <a href="https://www.osia.cz" target="_blank">OSIA</a>, 2018</p>
+            <p>With Love <a href="https://www.osia.cz" target="_blank">OSIA</a>, <?= date("Y") ?></p>
         </div>
     </div>
 </footer>
@@ -11,7 +11,6 @@
 <?php
 $url = \core\core::urlToAssets();
 $baseurl = "web/";
-var_dump($url);
 foreach ($url as $item){
     $baseurl .= "../";
 }
